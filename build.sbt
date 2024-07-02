@@ -2,7 +2,7 @@ name := "ScalaSpreadSheets"
 
 version := "0.1"
 
-scalaVersion := "2.13.0"
+scalaVersion := "2.13.14"
 
 val fastCompileRenderer = taskKey[File]("Return main file")
 lazy val fastCompileCreateFunctions = taskKey[Unit]("Fast compile, and adds to the compiled file the created functions")
