@@ -13,10 +13,7 @@ import scala.util.{Failure, Success}
  * @param decoder decoder to go from type U to Output type
  * @tparam U return type
  */
-final class CustomFunction3
-[-T1, -T2, -T3, +U]
-(f: (T1, T2, T3) => U)
-(implicit
+final class CustomFunction3 [-T1, -T2, -T3, +U] (f: (T1, T2, T3) => U) (implicit
  encoder1: Encoder[T1],
  encoder2: Encoder[T2],
  encoder3: Encoder[T3],
